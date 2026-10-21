@@ -37,38 +37,39 @@ h3 {
 }
 
 texto-degrade {
-  display: inline-block;
-  background: linear-gradient(90deg, #8d30e5, #52dfff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+display: inline-block;
+background: linear-gradient(90deg, #8d30e5, #52dfff);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
 
-  display: inline-block;
+display: inline-block;
 
-  filter: drop-shadow(0px 0px 5px #731dc899)
-          drop-shadow(0px 0px 5px #731dc899);
+filter: drop-shadow(0px 0px 5px #731dc899)
+drop-shadow(0px 0px 5px #731dc899);
 
     font-size: 3rem;
     font-weight: bold;
 }
 
 .degrade {
-  display: inline-block;
-  background: linear-gradient(90deg, #8d30e5, #52dfff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+display: inline-block;
+background: linear-gradient(90deg, #8d30e5, #52dfff);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
 
-  display: inline-block;
+display: inline-block;
 
-  filter: drop-shadow(0px 0px 5px #731dc899)
-          drop-shadow(0px 0px 5px #731dc899);
+filter: 
+drop-shadow(0px 0px 5px #731dc899)
+drop-shadow(0px 0px 5px #731dc899);
 
     font-size: 3rem;
     font-weight: bold;
 }
 
- .container {
+.container {
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -99,7 +100,7 @@ texto-degrade {
         }
 
 .img1 {
-         
+
             background-image: url(https://i.imgur.com/xEzyamw.png);
             background-position: center;
             border-radius: 10px;
@@ -108,21 +109,21 @@ texto-degrade {
             border-style: solid;
             max-width: 100%;
             width: 200px;
-            height: 400px;
+            height: 300px;
         }
 
 .img2 {
-          
+
             background-image: url(https://i.imgur.com/DvmizCI.png);
             background-position: center;
             border-radius: 10px;
             border: #ffffff;
             border-width: 4px;
             border-style: solid;
-            max-width: 100%;
             width: 200px;
+            height: 300px;
         }
-       
+
 .img3 {
 
             background-image: url(https://i.imgur.com/bDgyyCE.png);
@@ -131,12 +132,12 @@ texto-degrade {
             border: #ffffff;
             border-width: 4px;
             border-style: solid; 
-            max-width: 100%;
             width: 200px;
+            height: 300px;
         }
 
 .espaço {
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
   gap: 20px; /* espaço entre itens */
 }

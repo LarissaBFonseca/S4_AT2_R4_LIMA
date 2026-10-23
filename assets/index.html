@@ -15,11 +15,16 @@
         
     </style>
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="">
+    
 
 </head>
 
-<body>
+<body style="
+    background-color: black;
+    color: white;">
+    
+
     <!--Tudo que envolva o corpo do site, 
     o que vai estar escritos, 
     botões imagens e etc, tudo que 
@@ -91,6 +96,33 @@
         temporariamente eles. Apenas a classe container 
         etsá habilitada-->
 
+        <img src ="https://i.imgur.com/bDgyyCE.png" style="
+        background-position: center;
+        border-radius: 10px;
+        border: #ffffff;
+        border-width: 4px;
+        border-style: solid; 
+        height: 200px;
+        weight: 200px;">
+
+        <img src ="https://i.imgur.com/DvmizCI.png" style="
+        background-position: center;
+        border-radius: 10px;
+        border: #ffffff;
+        border-width: 4px;
+        border-style: solid; 
+        height: 200px;
+        weight: 200px;">
+
+        <img src ="https://i.imgur.com/xEzyamw.png" style="
+        background-position: center;
+        border-radius: 10px;
+        border: #ffffff;
+        border-width: 4px;
+        border-style: solid; 
+        height: 200px;
+        weight: 200px;">
+
         <div class="item">
             <div class="img1"></div>
             <p>Periféricos</p>
@@ -114,6 +146,182 @@
 
     <h3 style="
     margin-bottom: 50px;"><texto-degrade>Nossos serviços</texto-degrade></h3>
+
+     <table border="2">
+
+
+        <thead> <!-- Cabeçalho da tabela -->
+        
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>categoria</th>
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+                <td>Placa de vídeo</td>
+                <td>R$ 2.000,00</td>
+                <td>Hardware</td>
+            </tr>
+            
+            <tr>
+                <td>Mouse</td>
+                <td>R$ 100,00</td>
+                <td>Periférico</td>
+            </tr>
+
+            <tr>
+                <td>Teclado Mecânico</td>
+                <td>R$ 300,00</td>
+                <td>Periférico</td>
+            </tr>
+
+            <tr>
+                <td>Monitor</td>
+                <td>R$ 1.000,00</td>
+                <td>Periférico</td>
+            </tr>
+
+            <tr>
+                <td>Processador</td>
+                <td>R$ 1.500,00</td>
+                <td>Hardware</td>
+            </tr>
+
+        </tbody>
+
+
+    </table>
+
+    <h1>Cadastro de dados</h1>
+
+      <h1>Dados do cliente</h1>
+	
+	<hr>
+	
+<!-- Grupo 1: Dados do Cliente -->
+    <fieldset>
+        <legend><strong>1. Dados do Cliente</strong></legend>
+            
+        <p>
+            <label for="nome">Nome Completo:*</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </p>
+
+        <p>
+            <label for="email">E-mail:*</label><br>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </p>
+
+        <p>
+            <label for="whatsapp">WhatsApp:*</label><br>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required>
+        </p>
+    </fieldset>
+	
+		
+	<hr>
+
+    <h1>Configuração do Hardware</h1>
+
+  <!-- Grupo 2: Configuração do Hardware -->
+        <fieldset>
+
+            <legend><strong>2. Preferências do Hardware</strong></legend>
+
+            <p>
+                <label for="gpu">Escolha a Placa de Vídeo Principal:*</label><br>
+                <select id="gpu" name="gpu" required>
+                    <option value="">-- Selecione uma GPU --</option>
+                    <option value="gtx1650">NVIDIA GTX 1650 4GB (Entry)</option>
+                    <option value="rtx4060ti">NVIDIA RTX 4060 Ti 8GB (Mid-Range)</option>
+                    <option value="rtx4090">NVIDIA RTX 4090 24GB (High-End 4K)</option>
+                </select>
+            </p>
+
+            <p>
+                <strong>Objetivo Principal da Máquina:*</strong><br>
+
+                <input 
+                type="radio" 
+                id="jogos" name="objetivo" 
+                value="jogos" checked>
+                <label for="jogos">Jogos Eletrônicos / eSports</label><br>
+                
+                <input 
+                type="radio" 
+                id="streaming" 
+                name="objetivo" 
+                value="streaming">
+                <label for="streaming">Live Stream / Criação de Conteúdo</label><br>
+                
+                <input 
+                type="radio" 
+                id="trabalho" 
+                name="objetivo" 
+                value="trabalho">
+                <label for="trabalho">Edição de Vídeo 3D / Arquitetura</label>
+            </p>
+
+            <p>
+                <strong>Serviços e Adicionais Desejados:</strong><br>
+                <input 
+                type="checkbox" 
+                id="rgb" 
+                name="adicionais[]" 
+                value="rgb_extra">
+                <label for="rgb">Fitas de LED RGB Adicionais no Gabinete</label><br>
+
+                <input 
+                type="checkbox" 
+                id="overclock" 
+                name="adicionais[]" 
+                value="overclock">
+                <label for="overclock">Perfil de Overclock Configurado na BIOS</label><br>
+
+                <input 
+                type="checkbox" 
+                id="garantia_estendida" 
+                name="adicionais[]" 
+                value="garantia3anos">
+                <label for="garantia_estendida">Garantia Estendida de 3 Anos PixelGear Care</label>
+            </p>
+
+            <p>
+                <label for="observacoes">Observações ou Dúvidas Específicas:</label><br>
+                <textarea 
+                id="observacoes" 
+                name="observacoes" 
+                rows="4" 
+                cols="50" 
+                placeholder="Descreva jogos específicos que pretende rodar ou preferências de marcas..."></textarea>
+            </p>
+
+            <p>
+                <label for="foto_referencia">Anexar Print ou Foto do Setup de Referência:</label><br>
+                <input 
+                type="file" 
+                id="foto_referencia" 
+                name="foto_referencia" 
+                accept="image/*">
+            </p>
+
+        </fieldset>
+
+
+        <br>
+
+        <button type="submit">🚀 ENVIAR SOLICITAÇÃO DE ORÇAMENTO</button>
+        <button type="reset">🧹 Limpar Campos</button>
+
+    </form>
+
+    <hr>
 
     <p>
         <a href ="https://web.whatsapp.com/" target="_blank">
